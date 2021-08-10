@@ -1,0 +1,16 @@
+.top {
+    width: 100%;
+    line-height: 60px;
+    background-color: rgb(46,46,46);
+    display: flex;
+    justify-content:space-between;
+    padding: 0 5px;
+}
+.top span {
+    color: white;
+    font-size: 24px;
+}
+.topend {
+    margin: auto 5px;
+    
+}

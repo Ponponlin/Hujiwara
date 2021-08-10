@@ -7,8 +7,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "bootstrap": "^5.1.0",
+    "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
+    "json-server": "^0.16.3",
+    "vue": "^3.1.5",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
