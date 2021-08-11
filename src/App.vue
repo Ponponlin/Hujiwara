@@ -19,10 +19,10 @@
  
   <div class="container-fluid m-0 p-0">
     <div class="row">
-      <div class="col-3">
+      <div class="col-3 p-0">
         <sidemenu/>
       </div>
-      <div class="col-9">
+      <div class="col-9 p-0">
           <router-view/>
       </div>
     </div>

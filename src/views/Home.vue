@@ -5,19 +5,19 @@
         <div class="col">
           <div class="index-content d-flex align-items-center homeLable">
             <label class="">本週新增會員：</label>
-            <span class="">14</span>
+            <span class="">{{ newMember }}</span>
           </div>
         </div>
         <div class="col">
           <div class="index-content d-flex align-items-center homeLable">
             <label class="">本月業績：</label>
-            <span class="">250</span>
+            <span class="">{{ performance }}</span>
           </div>
         </div>
         <div class="col">
           <div class="index-content d-flex align-items-center homeLable">
             <label>本月交易筆數：</label>
-            <span class="">50</span>
+            <span class="">{{ dealCount }}</span>
           </div>
         </div>
       </div>
@@ -30,7 +30,14 @@
 
 export default {
   name: 'Home',
-  components: {   }
+  components: {},
+  data() {
+    return {
+      newMember: '14',
+      performance: '1500',
+      dealCount: '50'
+    }
+  }
 }
 </script>
 
