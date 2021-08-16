@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
+import memberAdd from '../views/memberAdd.vue'
+
 const routes = [
   {
     path: '/',
@@ -19,7 +21,12 @@ const routes = [
     path: '/member',
     name: 'Member',
     component: Member
-  }
+  },
+  {
+    path: '/member/add',
+    name: 'memberAdd',
+    component: memberAdd
+  },
 ]
 
 const router = createRouter({

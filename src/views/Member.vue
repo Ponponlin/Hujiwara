@@ -1,14 +1,16 @@
 <template>
     <div class="container-fluid p-0">
         <div class="memberTop">
-            <button class="btn btn-primary">新增會員</button>
+            <router-link to='/member/add'>
+                <button class="btn btn-primary">新增會員</button>
+            </router-link>
             <input type="text" placeholder="請輸入會員帳號" v-on:change="search(members, searchMember)" v-model="searchMember"/>
         
         </div>
         <!-- 會員列表 -->
         <div class="memberSheet">
             <table class="table  table-hover table-borderless">
-                <thead class="bg-">
+                <thead>
                     <tr>
                         <td>姓名</td>
                         <td>電話</td>
