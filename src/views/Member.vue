@@ -25,7 +25,12 @@
                         <td v-if="member.vip">是</td>
                         <td v-else>否</td>
                     <td align="right">
-                        <button class="btn btn-secondary">修改</button>
+                        <router-link  :to="{name: 'memberEdit', params:{id:member.id}}">
+                            <button class="btn btn-secondary">修改</button>                       
+                            
+                        </router-link>
+
+                        
                         <button class="btn btn-danger ">刪除</button>
                     </td>
                 </tr>

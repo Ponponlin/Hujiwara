@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
 import memberAdd from '../views/memberAdd.vue'
+import memberEdit from '../views/memberEdit.vue'
 
 const routes = [
   {
@@ -27,6 +28,12 @@ const routes = [
     name: 'memberAdd',
     component: memberAdd
   },
+  {
+    path: '/member/:id',
+    name: 'memberEdit',
+    component: memberEdit,
+    props: true
+  }
 ]
 
 const router = createRouter({

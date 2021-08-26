@@ -51,4 +51,8 @@ export default {
   margin: 10px 5px;
   padding: 10px;
 }
+.row {
+  padding: 0px 10px;
+}
+
 </style>
